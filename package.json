@@ -1,0 +1,19 @@
+{
+  "name": "typescript-ezlog",
+  "version": "0.0.1",
+  "description": "An ezzz logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LennartZebandt/typescript-ezlog.git"
+  },
+  "author": "Lennart Zebandt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LennartZebandt/typescript-ezlog/issues"
+  },
+  "homepage": "https://github.com/LennartZebandt/typescript-ezlog#readme"
+}
