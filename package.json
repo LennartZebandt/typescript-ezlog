@@ -4,7 +4,7 @@
   "description": "An ezzz logger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/LennartZebandt/typescript-ezlog/issues"
   },
-  "homepage": "https://github.com/LennartZebandt/typescript-ezlog#readme"
+  "homepage": "https://github.com/LennartZebandt/typescript-ezlog#readme",
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "typescript": "^2.7.1",
+    "typings": "^2.1.1"
+  }
 }
