@@ -1,11 +1,12 @@
 import * as util from 'util';
 import { Level } from './level';
 import { Color } from './color';
-import { getCurrentLevel } from './typescript-ezlog';
 
 export class Logger { 
 
-    constructor(private tag: string) { }
+    public static currentLevel: Level = process.env.LOG_LEVEL instanceof Number ? parseInt(process.env.LOG_LEVEL): Level.DEB;
+
+    constructor(public tag: string) { }
 
     public err(...data: any[]) { 
         this.checkLevel(Level.ERR, data);
@@ -63,7 +64,7 @@ export class Logger {
     }
 
     private checkLevel(level: Level, data: any[]) {         
-        if (getCurrentLevel() < level) return;
+        if (Logger.currentLevel < level) return;
         this.log(level, this.transform(level, data));
     }
 
