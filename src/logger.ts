@@ -2,9 +2,15 @@ import * as util from 'util';
 import { Level } from './level';
 import { Color } from './color';
 
+declare const process : {
+    env: {
+      LOG_LEVEL: number
+    }
+  }
+  
 export class Logger { 
 
-    public static currentLevel: Level = process.env.LOG_LEVEL instanceof Number ? parseInt(process.env.LOG_LEVEL): Level.DEB;
+    public static currentLevel: Level = process.env.LOG_LEVEL || Level.DEB;
 
     constructor(public tag: string) { }
 
@@ -63,7 +69,8 @@ export class Logger {
         }
     }
 
-    private checkLevel(level: Level, data: any[]) {         
+    private checkLevel(level: Level, data: any[]) {        
+        console.log('currentLevel', Logger.currentLevel); 
         if (Logger.currentLevel < level) return;
         this.log(level, this.transform(level, data));
     }

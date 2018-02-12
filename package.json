@@ -1,8 +1,8 @@
 {
   "name": "typescript-ezlog",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Easy TypeScript library for logging in Nodejs.",
-  "main": "index.js",
+  "main": "dist/typescript-ezlog.js",
   "scripts": {
     "build": "tsc"
   },
@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/LennartZebandt/typescript-ezlog.git"
   },
+  "keywords": [
+    "typescript-logging",
+    "logging",
+    "colors",
+    "log",
+    "logger"
+  ],
   "author": "Lennart Zebandt",
   "license": "ISC",
   "bugs": {
@@ -17,8 +24,9 @@
   },
   "homepage": "https://github.com/LennartZebandt/typescript-ezlog#readme",
   "devDependencies": {
-    "@types/node": "9.4.0",
-    "typescript": "2.7.1",
-    "typings": "2.1.1"
+    "typescript": "2.7.1"
+  },
+  "dependencies": {
+    "@types/node": "9.4.5"
   }
 }
