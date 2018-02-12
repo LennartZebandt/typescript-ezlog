@@ -1,7 +1,7 @@
 {
   "name": "typescript-ezlog",
   "version": "0.5.0",
-  "description": "An ezzz logger",
+  "description": "Easy TypeScript library for logging in Nodejs.",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/LennartZebandt/typescript-ezlog#readme",
   "devDependencies": {
-    "@types/node": "^9.4.0",
-    "typescript": "^2.7.1",
-    "typings": "^2.1.1"
+    "@types/node": "9.4.0",
+    "typescript": "2.7.1",
+    "typings": "2.1.1"
   }
 }
