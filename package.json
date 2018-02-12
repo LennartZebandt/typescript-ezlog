@@ -1,8 +1,9 @@
 {
   "name": "typescript-ezlog",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Easy TypeScript library for logging in Nodejs.",
   "main": "dist/typescript-ezlog.js",
+  "types" : "dist/typescript-ezlog.d.ts",
   "scripts": {
     "build": "tsc"
   },
