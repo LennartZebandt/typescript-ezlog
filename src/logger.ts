@@ -70,7 +70,6 @@ export class Logger {
     }
 
     private checkLevel(level: Level, data: any[]) {        
-        console.log('currentLevel', Logger.currentLevel); 
         if (Logger.currentLevel < level) return;
         this.log(level, this.transform(level, data));
     }
