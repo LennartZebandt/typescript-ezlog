@@ -1,14 +1,16 @@
 # typescript-ezlog
-Easy TypeScript library for logging in Nodejs.
 
-Not tested yet!
+> This library is no longer maintained or ready for production.
+> I recommended using [roarr](https://github.com/gajus/roarr#readme) for logging in nodejs/web projects.
+
+Easy TypeScript library for logging in Nodejs.
 
 * Easy to integrate in Typescript projects
 * Easy to create custom loggers by using generalization
 * Easy to save logs to file
 * Set loglevel with envoirment variables
 * Set tag for file to find dedicated code
-* Fucking colorful
+* colorful
 
 ## Installation
 
